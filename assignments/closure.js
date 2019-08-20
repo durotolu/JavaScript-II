@@ -4,6 +4,13 @@
 // that manipulates variables defined in the outer scope.
 // The outer scope can be a parent function, or the top level of the script.
 
+function a () {
+  console.log('a');
+  return function b () {
+    console.log('b');
+  }
+}
+
 
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
 

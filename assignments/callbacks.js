@@ -62,7 +62,7 @@ function multiplyNums(x, y, cb) {
 function contains(item, list, cb) {
   // contains checks if an item is present inside of the given array/list.
   // Pass true to the callback if it is, otherwise pass false.
-  return cb((item, list) => {return list.map(item === list[i])});
+  return cb((item, list) => {return list.include(item)});
 }
 
 /* STRETCH PROBLEM */
@@ -71,4 +71,5 @@ function removeDuplicates(array, cb) {
   // removeDuplicates removes all duplicate values from the given array.
   // Pass the duplicate free array to the callback function.
   // Do not mutate the original array.
+  return cb(array.filter(array !== array));
 }
